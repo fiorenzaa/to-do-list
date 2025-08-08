@@ -11,11 +11,22 @@
     <div class="todo-wrapper">
         <h2>My To Do List</h2>
         <p>Double-click an item to mark it complete</p>
-        <form>
-            <input type="text"/>
-            <button class="customized-btn">Add</button>
+
+        <form name="todo-adder">
+            <input type="text" id="todo-entry-box"/>
         </form>
+        <button id="add-button" class="customized-btn">Add</button>
+        <br>
+        <ol id="todo-list">
+        </ol>
+        <div id="control-wrapper">
+            <button id="clear-completed-button" onclick="clearCompletedToDoItems()" class="customized-btn">Clear Completed</button>
+            <button id="empty-button" onclick="emptyList()" class="customized-btn">Empty List</button>
+            <button id="save-button" onclick="saveList()" class="customized-btn">Save List</button>
+        </div>
     </div>
-    <ol></ol>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
