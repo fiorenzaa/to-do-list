@@ -18,6 +18,7 @@ function newToDoItem(itemText, completed) {
     }
 
     toDoList.appendChild(toDoItem);
+    toDoEntryBox.value = '';
     toDoItem.addEventListener("dblclick", toggleToDoItemState);
 }
 

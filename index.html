@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My To Do List</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="todo-wrapper">
         <h2>My To Do List</h2>
         <p>Double-click an item to mark it complete</p>
 
-        <form name="todo-adder">
-            <input type="text" id="todo-entry-box"/>
-        </form>
+        <input type="text" id="todo-entry-box" />
         <button id="add-button" class="customized-btn">Add</button>
         <br>
-        <ol id="todo-list">
-        </ol>
+        <div class="list-container">
+            <ol id="todo-list">
+            </ol>
+        </div>
         <div id="control-wrapper">
-            <button id="clear-completed-button" onclick="clearCompletedToDoItems()" class="customized-btn">Clear Completed</button>
+            <button id="clear-completed-button" onclick="clearCompletedToDoItems()" class="customized-btn">Clear
+                Completed</button>
             <button id="empty-button" onclick="emptyList()" class="customized-btn">Empty List</button>
             <button id="save-button" onclick="saveList()" class="customized-btn">Save List</button>
         </div>
@@ -29,4 +33,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
